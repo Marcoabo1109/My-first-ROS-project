@@ -1,0 +1,14 @@
+chmod +x Nó_detecção_objeto.py
+chmod +x Nó_PID.py
+
+
+-----------------------------------------------
+
+<launch>
+  <node name="Nó_detecção_objeto" pkg="seu_pacote" type="Nó_detecção_objeto.py" output="screen"/>
+  <node name="Nó_PID" pkg="seu_pacote" type="Nó_PID.py" output="screen"/>
+</launch>
+
+-----------------------------------------------
+
+roslaunch seu_pacote seu_arquivo_launch.launch
