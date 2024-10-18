@@ -9,9 +9,9 @@ class PIDController:
         self.cmd_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
 
         # Parâmetros PID (ajuste conforme necessário)
-        self.Kp = 0.1
+        self.Kp = 0.000004
         self.Ki = 0.01
-        self.Kd = 0.05
+        self.Kd = 0.0000005
 
         self.previous_error = 0
         self.integral = 0
